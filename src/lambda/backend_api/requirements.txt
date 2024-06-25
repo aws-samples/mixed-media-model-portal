@@ -1,0 +1,15 @@
+jax[cpu]==0.4.23
+absl-py
+arviz>=0.11.2
+immutabledict>=2.0.0
+matplotlib==3.6.1
+numpy>=1.23
+pandas>=1.1.5
+scipy<1.13
+seaborn==0.11.1
+scikit-learn
+statsmodels>=0.13.0
+boto3
+awswrangler
+aws-lambda-powertools[all]
+numpyro==0.13.2

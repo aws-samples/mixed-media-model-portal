@@ -1,0 +1,4 @@
+aws-cdk-lib==2.116.1
+constructs>=10.0.0,<11.0.0
+aws-cdk.aws-glue-alpha==2.116.1a0
+aws-cdk.aws_lambda_python_alpha==2.116.1a0

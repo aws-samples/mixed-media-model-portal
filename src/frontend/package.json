@@ -1,0 +1,40 @@
+{
+  "name": "mmmfrontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aws-amplify/auth": "^6.0.3",
+    "@aws-amplify/ui-react": "^6.0.2",
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@types/react": "^18.2.34",
+    "@types/react-dom": "^18.2.14",
+    "@vitejs/plugin-react": "^4.2.1",
+    "aws-amplify": "^6.0.3",
+    "axios": "^1.6.2",
+    "framer-motion": "^6.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.48.2",
+    "react-icons": "^3.11.0",
+    "swr": "^2.2.4",
+    "victory": "^37.0.2"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "devbuild": "tsc && vite build --mode development",
+    "startprod": "vite --mode production"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "vite": "^5.0.12",
+    "vite-tsconfig-paths": "^4.3.1"
+  }
+}

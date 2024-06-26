@@ -87,20 +87,20 @@ First we need to go to the CDK folder and create a virtual python environment
 
 ```sh
 cd ../../infra
-$ python3 -m venv .venv
+python3 -m venv .venv
 ```
 
 After the init process completes and the virtualenv is created, you can use the following
 step to activate your virtualenv.
 
 ```sh
-$ source .venv/bin/activate
+source .venv/bin/activate
 ```
 
 Once the virtualenv is activated, you can install the required dependencies.
 
 ```sh
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Now we can deploy CDK which contains multiple stacks
@@ -130,6 +130,20 @@ aws cognito-idp admin-create-user \
 ```
 
 Now you should be ready to access the web portal at the cloudfront URL noted from the output in the previous step!
+
+### 4. Generate sample data (Optional)
+
+To generate sample data, you can invoke the data generation lambda function that is included
+
+```sh
+aws lambda invoke \
+    --function-name <DataGenerator Lambda Function Name> \
+    --invocation-type Event \
+    --cli-binary-format raw-in-base64-out \
+    response.json
+```
+
+After the request completes, you should be able to see sample data tables populated in Glue, you should also be able to see these sample data tables avaialble in the web application when submitting a new model training job
 
 ## Remove resources
 

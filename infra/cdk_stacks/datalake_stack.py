@@ -48,6 +48,7 @@ class CdkDataLakeStack(Stack):
             self,
             "HpcBlogDataLakeAthenaWorkGroup",
             name="HpcBlogDataLakeAthenaWorkGroup",
+            recursive_delete_option=True,
             work_group_configuration=athena.CfnWorkGroup.WorkGroupConfigurationProperty(
                 enforce_work_group_configuration=False,
                 result_configuration=athena.CfnWorkGroup.ResultConfigurationProperty(
